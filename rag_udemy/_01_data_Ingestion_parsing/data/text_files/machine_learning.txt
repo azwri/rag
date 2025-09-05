@@ -1,0 +1,17 @@
+Machine Learning Basics
+Machine learning is a subset of artificial intelligence that focuses on building systems that can learn from and make decisions based on data. It involves training algorithms on datasets to identify patterns and make predictions.
+There are several types of machine learning, including supervised learning, unsupervised learning, and reinforcement learning. Common algorithms include decision trees, support vector machines, and neural networks.
+Applications of machine learning span various domains such as healthcare, finance, marketing, and more. It is used for tasks like image recognition, natural language processing, recommendation systems, and fraud detection.
+
+Key concepts in machine learning include:
+- Training and testing datasets
+- Model evaluation and validation
+- Overfitting and underfitting
+- Feature selection and engineering
+- Hyperparameter tuning
+
+Types of Machine Learning:
+- Supervised Learning: Learning from labeled data
+- Unsupervised Learning: Finding patterns in unlabeled data
+- Reinforcement Learning: Learning through rewards and penalties
+
