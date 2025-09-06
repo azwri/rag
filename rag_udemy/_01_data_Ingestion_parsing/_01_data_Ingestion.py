@@ -112,3 +112,33 @@ for i, doc in enumerate(documents):
     print(f"Metadata: {doc.metadata}")
 
 # %%
+### text splitting - splitting large documents into smaller chunks
+# Why text splitting is important?
+print("\nText splitting is important for:")
+print("- Efficient processing and embedding")
+print("- Improved search relevance")
+print("- Handling model input size limitations")
+print("- Better context management")
+# %%
+from langchain.text_splitter import (
+    CharacterTextSplitter,
+    RecursiveCharacterTextSplitter,
+    TokenTextSplitter,
+)
+
+print(documents)
+print(documents[0].page_content)
+# %%
+#### method 1: CharacterTextSplitter
+text_splitter = CharacterTextSplitter(
+    separator="\n",
+    chunk_size=500,
+    chunk_overlap=100,
+    length_function=len,
+)
+texts = text_splitter.split_text(documents[0].page_content)
+print(f"Number of chunks created: {len(texts)}")
+
+for i, chunk in enumerate(texts):
+    print(f"\nChunk {i+1}:\n{chunk}")
+# %%

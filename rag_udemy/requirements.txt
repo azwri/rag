@@ -26,5 +26,4 @@ wikipedia
 langgraph
 ipykernel
 pandas
-
-
+PyMuPDF
